@@ -5,7 +5,7 @@ import sys
  
 class Stopwatch(QtWidgets.QMainWindow):
     def __init__(self):
-        super(Stopwatch, self).__init__()
+        super().__init__()
         uic.loadUi('stopwatch.ui', self)
 
         self.timer = QtCore.QTimer()
