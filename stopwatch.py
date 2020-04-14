@@ -3,9 +3,9 @@ from PyQt5.QtWidgets import QMessageBox
 from PyQt5 import QtCore
 import sys
  
-class Example(QtWidgets.QMainWindow):
+class Stopwatch(QtWidgets.QMainWindow):
     def __init__(self):
-        super(Example, self).__init__()
+        super(Stopwatch, self).__init__()
         uic.loadUi('stopwatch.ui', self)
 
         self.timer = QtCore.QTimer()
@@ -33,6 +33,6 @@ class Example(QtWidgets.QMainWindow):
         self.timeEdit.setTime(self.time)
 
 app = QtWidgets.QApplication([])
-win = Example()
+win = Stopwatch()
 win.show()
 sys.exit(app.exec())
